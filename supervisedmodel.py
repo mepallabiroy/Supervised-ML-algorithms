@@ -88,7 +88,7 @@ accuracy["KNN"] = accuracy_score(y_test, y_predict_knn)
 decisiontree = DecisionTreeClassifier(criterion = "entropy", random_state= 1)
 decisiontree.fit(x_train, y_train)
 y_predict_tree = decisiontree.predict(x_test)
-accuracy_score(y_test,y_predict_tree)
+accuracy_score(y_test,y_predict_tree) 
 accuracy["Decision Tree"] = accuracy_score(y_test, y_predict_tree)
 confusion_matrix(y_test, y_predict_tree)
 
